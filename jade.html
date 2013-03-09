@@ -11,6 +11,27 @@
   <p><a href="http://jade-lang.com/">Website</a> | <a href="https://github.com/visionmedia/jade">Github</a></p>
   
   <div id="output"></div>
+  
+  <h5>Template source:</h5>
+  <pre>
+table.table#template
+  thead
+    tr
+      th Name
+      th Description
+      th Owner
+      th Forks
+      th Stars
+
+  tbody
+    - for repo in repos
+      tr
+        td #{repo.name}
+        td #{repo.description}
+        td #{repo.owner}
+        td #{repo.forks}
+        td #{repo.watchers}
+  </pre>
 </div>
 
 <!-- Include compiled Jade templates -->

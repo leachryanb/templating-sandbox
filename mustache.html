@@ -11,29 +11,32 @@
   <p><a href="https://github.com/janl/mustache.js/">Github</a></p>
 
   <div id="output"></div>
+
+  <h5>Template source:</h5>
+  <pre id="templateSource"></pre>
 </div>
 
 <!-- Include Mustache template using script tag -->
 <script type="text/template" id="mustacheTemplate">
   <table class="table">
     <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Owner</th>
-      <th>Forks</th>
-      <th>Stars</th>
-    </tr>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Owner</th>
+        <th>Forks</th>
+        <th>Stars</th>
+      </tr>
     </thead>
     <tbody>
     {{ #repos }}
-    <tr>
-      <td>{{ name }}</td>
-      <td>{{ description }}</td>
-      <td>{{ owner }}</td>
-      <td>{{ forks }}</td>
-      <td>{{ watchers }}</td>
-    </tr>
+      <tr>
+        <td>{{ name }}</td>
+        <td>{{ description }}</td>
+        <td>{{ owner }}</td>
+        <td>{{ forks }}</td>
+        <td>{{ watchers }}</td>
+      </tr>
     {{ /repos }}
     </tbody>
   </table>
@@ -46,12 +49,16 @@
   $(function() {
     $.getJSON("data/github.json", function (data) {
       var template = $('#mustacheTemplate').html();
-      
+
       // Mustache render
       var html = Mustache.render(template, data);
 
       $('#output').html(html);
     });
+
+    // Dynamically populate pre tag
+    var source = $('#mustacheTemplate').html();
+    $('#templateSource').text(source);
   });
 </script>
 

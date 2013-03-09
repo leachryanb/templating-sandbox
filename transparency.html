@@ -32,6 +32,9 @@
     </tbody>
   </table>
 
+  <h5>Template source:</h5>
+  <pre id="templateSource"></pre>
+
 </div>
 
 <script type="text/javascript" src="components/jquery/jquery.min.js"></script>
@@ -41,14 +44,17 @@
   $(function() {
     $.getJSON("data/github.json", function (data) {
       var template = document.getElementById('template');
-      var $template = $(template);
       
       // Transparency renders off DOM
       Transparency.render(template, data);
       
       // ... or render via jQuery plugin
-      //$template.render(data);
+      //$(template).render(data);
     });
+    
+    // Dynamically populate pre tag
+    var source = $('#template').clone().wrap('<div>').parent().html();
+    $('#templateSource').text(source);
   });
 </script>
 
