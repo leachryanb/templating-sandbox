@@ -12,7 +12,8 @@
 
   <div id="output"></div>
 </div>
-  
+
+<!-- Include Mustache template using script tag -->
 <script type="text/template" id="mustacheTemplate">
   <table class="table">
     <thead>
@@ -45,6 +46,8 @@
   $(function() {
     $.getJSON("data/github.json", function (data) {
       var template = $('#mustacheTemplate').html();
+      
+      // Mustache render
       var html = Mustache.render(template, data);
 
       $('#output').html(html);

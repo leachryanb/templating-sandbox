@@ -1,17 +1,17 @@
 table.table#template
-    thead
-        tr
-            th Name
-            th Description
-            th Owner
-            th Forks
-            th Stars
+  thead
+    tr
+      th Name
+      th Description
+      th Owner
+      th Forks
+      th Stars
 
-    tbody
-        - for repo in repos
-            tr
-                td #{repo.name}
-                td #{repo.description}
-                td #{repo.owner}
-                td #{repo.forks}
-                td #{repo.watchers}
+  tbody
+    - for repo in repos
+      tr
+        td #{repo.name}
+        td #{repo.description}
+        td #{repo.owner}
+        td #{repo.forks}
+        td #{repo.watchers}

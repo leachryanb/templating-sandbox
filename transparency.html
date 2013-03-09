@@ -9,7 +9,8 @@
 <div class="container">
   <h3>Transparency.js</h3>
   <p><a href="http://leonidas.github.com/transparency/">Website</a> | <a href="https://github.com/leonidas/transparency">Github</a></p>
-    
+
+  <!-- Use DOM for Transparency template -->
   <table class="table" id="template">
     <thead>
     <tr>
@@ -39,8 +40,14 @@
 <script type="text/javascript">
   $(function() {
     $.getJSON("data/github.json", function (data) {
-      var $template = $('#template');
-      $template.render(data);
+      var template = document.getElementById('template');
+      var $template = $(template);
+      
+      // Transparency renders off DOM
+      Transparency.render(template, data);
+      
+      // ... or render via jQuery plugin
+      //$template.render(data);
     });
   });
 </script>
