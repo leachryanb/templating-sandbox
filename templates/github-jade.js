@@ -189,20 +189,20 @@ attrs = attrs || jade.attrs; escape = escape || jade.escape; rethrow = rethrow |
 var buf = [];
 with (locals || {}) {
 var interp;
-buf.push('<table id="template" class="table"><thead><tr><th>Name</th><th>Description</th><th>Owner</th><th>Created</th><th>Updated</th><th>Forks</th><th>Stars</th></tr></thead><tbody>');
+buf.push('<table id="template" class="table"><thead><tr><th>Name</th><th>Description</th><th>Owner</th><th>Forks</th><th>Stars</th></tr></thead><tbody>');
 // iterate repos
 ;(function(){
   if ('number' == typeof repos.length) {
     for (var $index = 0, $$l = repos.length; $index < $$l; $index++) {
       var repo = repos[$index];
 
-buf.push('<tr><td>' + escape((interp = repo.name) == null ? '' : interp) + '</td><td>' + escape((interp = repo.description) == null ? '' : interp) + '</td><td>' + escape((interp = repo.owner) == null ? '' : interp) + '</td><td>' + escape((interp = repo.created_at) == null ? '' : interp) + '</td><td>' + escape((interp = repo.updated_at) == null ? '' : interp) + '</td><td>' + escape((interp = repo.forks) == null ? '' : interp) + '</td><td>' + escape((interp = repo.watchers) == null ? '' : interp) + '</td></tr>');
+buf.push('<tr><td>' + escape((interp = repo.name) == null ? '' : interp) + '</td><td>' + escape((interp = repo.description) == null ? '' : interp) + '</td><td>' + escape((interp = repo.owner) == null ? '' : interp) + '</td><td>' + escape((interp = repo.forks) == null ? '' : interp) + '</td><td>' + escape((interp = repo.watchers) == null ? '' : interp) + '</td></tr>');
     }
   } else {
     for (var $index in repos) {
       var repo = repos[$index];
 
-buf.push('<tr><td>' + escape((interp = repo.name) == null ? '' : interp) + '</td><td>' + escape((interp = repo.description) == null ? '' : interp) + '</td><td>' + escape((interp = repo.owner) == null ? '' : interp) + '</td><td>' + escape((interp = repo.created_at) == null ? '' : interp) + '</td><td>' + escape((interp = repo.updated_at) == null ? '' : interp) + '</td><td>' + escape((interp = repo.forks) == null ? '' : interp) + '</td><td>' + escape((interp = repo.watchers) == null ? '' : interp) + '</td></tr>');
+buf.push('<tr><td>' + escape((interp = repo.name) == null ? '' : interp) + '</td><td>' + escape((interp = repo.description) == null ? '' : interp) + '</td><td>' + escape((interp = repo.owner) == null ? '' : interp) + '</td><td>' + escape((interp = repo.forks) == null ? '' : interp) + '</td><td>' + escape((interp = repo.watchers) == null ? '' : interp) + '</td></tr>');
    }
   }
 }).call(this);
