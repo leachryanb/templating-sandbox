@@ -18,28 +18,28 @@
 
 <!-- Include Mustache template using script tag -->
 <script type="text/template" id="mustacheTemplate">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Owner</th>
-        <th>Forks</th>
-        <th>Stars</th>
-      </tr>
-    </thead>
-    <tbody>
-    {{ #repos }}
-      <tr>
-        <td>{{ name }}</td>
-        <td>{{ description }}</td>
-        <td>{{ owner }}</td>
-        <td>{{ forks }}</td>
-        <td>{{ watchers }}</td>
-      </tr>
-    {{ /repos }}
-    </tbody>
-  </table>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Owner</th>
+      <th>Forks</th>
+      <th>Stars</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ #repos }}
+    <tr>
+      <td>{{ name }}</td>
+      <td>{{ description }}</td>
+      <td>{{ owner }}</td>
+      <td>{{ forks }}</td>
+      <td>{{ watchers }}</td>
+    </tr>
+  {{ /repos }}
+  </tbody>
+</table>
 </script>
 
 <script type="text/javascript" src="components/jquery/jquery.min.js"></script>
