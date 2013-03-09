@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Jade</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="output"></div>
+
+<script type="text/javascript" src="templates/github-jade.js"></script>
+
+<script type="text/javascript" src="components/jquery/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $.getJSON("data/templates.json", function (data) {
+      var template = $('#mustacheTemplate').html();
+      jade.render(document.getElementById('output'), 'github', data);
+    });
+  });
+</script>
+
+</body>
+</html>
