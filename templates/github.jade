@@ -1,0 +1,21 @@
+table.table#template
+    thead
+        tr
+            th Name
+            th Description
+            th Owner
+            th Created
+            th Updated
+            th Forks
+            th Stars
+
+    tbody
+        - for repo in repos
+            tr
+                td #{repo.name}
+                td #{repo.description}
+                td #{repo.owner}
+                td #{repo.created_at}
+                td #{repo.updated_at}
+                td #{repo.forks}
+                td #{repo.watchers}

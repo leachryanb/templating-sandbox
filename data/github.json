@@ -1,0 +1,174 @@
+{
+    "repos": [
+        {
+            "name": "mustache.js",
+            "description": "Minimal templating with {{mustaches}} in JavaScript",
+            "owner": "janl",
+            "html_url": "https://github.com/janl/mustache.js",
+            "created_at": "2009-10-04T23:41:19Z",
+            "updated_at": "2013-03-08T21:11:06Z",
+            "forks": 759,
+            "watchers": 4621
+        },
+        {
+            "name": "underscore",
+            "description": "JavaScript's utility _ belt",
+            "owner": "documentcloud",
+            "html_url": "https://github.com/documentcloud/underscore",
+            "created_at": "2009-10-25T18:31:06Z",
+            "updated_at": "2013-03-08T22:22:23Z",
+            "forks": 1137,
+            "watchers": 7472
+        },
+        {
+            "name": "jade",
+            "description": "Jade - robust, elegant, feature rich template engine for nodejs",
+            "owner": "visionmedia",
+            "html_url": "https://github.com/visionmedia/jade",
+            "created_at": "2010-06-23T01:05:42Z",
+            "updated_at": "2013-03-08T21:16:41Z",
+            "forks": 598,
+            "watchers": 4199
+        },
+        {
+            "name": "handlebars.js",
+            "description": "",
+            "owner": "wycats",
+            "html_url": "https://github.com/wycats/handlebars.js",
+            "created_at": "2010-07-31T18:54:46Z",
+            "updated_at": "2013-03-08T19:31:47Z",
+            "forks": 497,
+            "watchers": 4051
+        },
+        {
+            "name": "hogan.js",
+            "description": "A compiler for the Mustache templating language",
+            "owner": "twitter",
+            "html_url": "https://github.com/twitter/hogan.js",
+            "created_at": "2011-12-21T19:58:09Z",
+            "updated_at": "2013-03-08T17:57:52Z",
+            "forks": 156,
+            "watchers": 2519
+        },
+        {
+            "name": "jsrender",
+            "description": "Next-generation jQuery Templates, optimized for high-performance pure string-based rendering, without DOM or jQuery dependency.",
+            "owner": "BorisMoore",
+            "html_url": "https://github.com/BorisMoore/jsrender",
+            "created_at": "2011-04-22T16:29:45Z",
+            "updated_at": "2013-03-08T20:20:41Z",
+            "forks": 129,
+            "watchers": 1031
+        },
+        {
+            "name": "dustjs",
+            "description": "Asynchronous templates for the browser and node.js",
+            "owner": "akdubya",
+            "html_url": "https://github.com/akdubya/dustjs",
+            "created_at": "2010-10-25T07:45:00Z",
+            "updated_at": "2013-03-08T23:24:50Z",
+            "forks": 93,
+            "watchers": 919
+        },
+        {
+            "name": "ejs",
+            "description": "Embedded JavaScript templates for node",
+            "owner": "visionmedia",
+            "html_url": "https://github.com/visionmedia/ejs",
+            "created_at": "2010-07-09T19:55:35Z",
+            "updated_at": "2013-03-08T21:06:32Z",
+            "forks": 108,
+            "watchers": 814
+        },
+        {
+            "name": "doT",
+            "description": "The fastest + concise javascript template engine for nodejs and browsers. Partials, custom delimiters and more. ",
+            "owner": "olado",
+            "html_url": "https://github.com/olado/doT",
+            "created_at": "2011-01-10T20:47:04Z",
+            "updated_at": "2013-03-08T23:49:37Z",
+            "forks": 130,
+            "watchers": 825
+        },
+        {
+            "name": "ICanHaz.js",
+            "description": "A clean solution for templating with Mustache.js and jQuery or Zepto",
+            "owner": "HenrikJoreteg",
+            "html_url": "https://github.com/HenrikJoreteg/ICanHaz.js",
+            "created_at": "2010-07-12T18:47:17Z",
+            "updated_at": "2013-03-08T10:54:32Z",
+            "forks": 102,
+            "watchers": 620
+        },
+        {
+            "name": "tempo",
+            "description": "Tempo is an easy, intuitive JavaScript rendering engine that enables you to craft data templates in pure HTML.",
+            "owner": "twigkit",
+            "html_url": "https://github.com/twigkit/tempo",
+            "created_at": "2011-02-11T12:32:29Z",
+            "updated_at": "2013-03-08T21:47:15Z",
+            "forks": 41,
+            "watchers": 564
+        },
+        {
+            "name": "pure",
+            "description": "PURE Unobtrusive Rendering Engine for HTML",
+            "owner": "pure",
+            "html_url": "https://github.com/pure/pure",
+            "created_at": "2008-08-25T12:39:27Z",
+            "updated_at": "2013-03-05T22:06:39Z",
+            "forks": 58,
+            "watchers": 557
+        },
+        {
+            "name": "plates",
+            "description": "Light-weight, logic-less, DSL-free, templates for all javascript environments!",
+            "owner": "flatiron",
+            "html_url": "https://github.com/flatiron/plates",
+            "created_at": "2011-10-15T20:07:22Z",
+            "updated_at": "2013-03-08T05:29:28Z",
+            "forks": 59,
+            "watchers": 507
+        },
+        {
+            "name": "transparency",
+            "description": "Transparency is a semantic template engine for the browser. It maps JSON objects to DOM elements by id, class and data-bind attributes.",
+            "owner": "leonidas",
+            "html_url": "https://github.com/leonidas/transparency",
+            "created_at": "2012-01-13T15:25:01Z",
+            "updated_at": "2013-03-08T20:48:40Z",
+            "forks": 52,
+            "watchers": 357
+        },
+        {
+            "name": "emblem.js",
+            "description": "Emblem.js - Ember-friendly, indentation-base templating language that compiles to Handlebars.js",
+            "owner": "machty",
+            "html_url": "https://github.com/machty/emblem.js",
+            "created_at": "2013-01-21T07:44:02Z",
+            "updated_at": "2013-03-08T02:00:45Z",
+            "forks": 4,
+            "watchers": 236
+        },
+        {
+            "name": "JavaScript-Templates",
+            "description": "< 1KB lightweight, fast & powerful JavaScript templating engine with zero dependencies. Compatible with server-side environments like node.js, module loaders like RequireJS and all web browsers.",
+            "owner": "blueimp",
+            "html_url": "https://github.com/blueimp/JavaScript-Templates",
+            "created_at": "2011-12-10T20:55:40Z",
+            "updated_at": "2013-03-08T17:47:47Z",
+            "forks": 65,
+            "watchers": 234
+        },
+        {
+            "name": "nano",
+            "description": "Simplest jQuery Templating Engine, perfect for JSON parsing",
+            "owner": "trix",
+            "html_url": "https://github.com/trix/nano",
+            "created_at": "2009-07-09T11:31:07Z",
+            "updated_at": "2013-03-07T12:43:06Z",
+            "forks": 22,
+            "watchers": 207
+        }
+    ]
+}

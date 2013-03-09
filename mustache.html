@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Mustache.js</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="output"></div>
+
+<script type="text/template" id="mustacheTemplate">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Owner</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th>Forks</th>
+      <th>Stars</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{ #repos }}
+    <tr>
+      <td>{{ name }}</td>
+      <td>{{ description }}</td>
+      <td>{{ owner }}</td>
+      <td>{{ created_at }}</td>
+      <td>{{ updated_at }}</td>
+      <td>{{ forks }}</td>
+      <td>{{ watchers }}</td>
+    </tr>
+    {{ /repos }}
+    </tbody>
+  </table>
+</script>
+
+<script type="text/javascript" src="components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="components/mustache/mustache.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $.getJSON("data/templates.json", function (data) {
+      var template = $('#mustacheTemplate').html();
+      var html = Mustache.render(template, data);
+
+      $('#output').html(html);
+    });
+  });
+</script>
+
+</body>
+</html>
