@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Transparency.js</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<table class="table" id="template">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Owner</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Forks</th>
+    <th>Stars</th>
+  </tr>
+  </thead>
+  <tbody class="repos">
+  <tr>
+    <td class="name"></td>
+    <td class="description"></td>
+    <td class="owner"></td>
+    <td class="created_at"></td>
+    <td class="updated_at"></td>
+    <td class="forks"></td>
+    <td class="watchers"></td>
+  </tr>
+  </tbody>
+</table>
+
+<script type="text/javascript" src="components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="components/transparency/dist/transparency.min.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $.getJSON("data/templates.json", function (data) {
+      var $template = $('#template');
+      $template.render(data);
+    });
+  });
+</script>
+
+</body>
+</html>
