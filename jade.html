@@ -14,7 +14,7 @@
 
 <script type="text/javascript">
   $(function() {
-    $.getJSON("data/templates.json", function (data) {
+    $.getJSON("data/github.json", function (data) {
       var template = $('#mustacheTemplate').html();
       jade.render(document.getElementById('output'), 'github', data);
     });

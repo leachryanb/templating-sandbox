@@ -42,7 +42,7 @@
 
 <script type="text/javascript">
   $(function() {
-    $.getJSON("data/templates.json", function (data) {
+    $.getJSON("data/github.json", function (data) {
       var template = $('#mustacheTemplate').html();
       var html = Mustache.render(template, data);
 
